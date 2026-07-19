@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title -->
+    <title>How HTTP Works | Justin Ramsey</title>
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================
+         Navigation Menu
+    ====================================== -->
+
+    <nav>
+
+        <div class="logo">
+            <h2>Understanding HTTP</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="how-http-works.html">How HTTP Works</a></li>
+            <li><a href="key-concepts.html">Key Concepts</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- =====================================
+         Hero Section
+    ====================================== -->
+
+    <header class="hero">
+
+        <div class="hero-text">
+
+            <h1>How HTTP Works</h1>
+
+            <p>
+                HTTP uses a request-and-response process. A web browser sends a
+                request to a server, and the server sends back a response that
+                contains a webpage, image, file, message, or other resource.
+            </p>
+
+            <p>
+                This communication happens every time a user visits a webpage,
+                submits a form, watches a video, downloads a file, or uses an
+                online application.
+            </p>
+
+            <a href="#process" class="button">
+                View the Process
+            </a>
+
+            <a href="quiz.html" class="button">
+                Test Your Knowledge
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="images/browser-server.png"
+                alt="Diagram showing communication between a browser and web server">
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- =====================================
+             Client and Server
+        ====================================== -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>The Client</h2>
+
+                <p>
+                    The client is usually a web browser such as Chrome, Safari,
+                    Firefox, or Edge. The browser allows the user to enter a URL,
+                    click links, submit forms, and interact with webpages.
+                </p>
+
+                <p>
+                    When the user requests information, the browser creates an
+                    HTTP request and sends it across the Internet.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>The Web Server</h2>
+
+                <p>
+                    A web server stores website files and responds to requests.
+                    It may return an HTML page, an image, a stylesheet, a video,
+                    JSON data, or an error message.
+                </p>
+
+                <p>
+                    Some servers also communicate with databases and application
+                    software before creating the response.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- =====================================
+             Step-by-Step Process
+        ====================================== -->
+
+        <section class="container" id="process">
+
+            <article class="card">
+
+                <h2>Step-by-Step HTTP Process</h2>
+
+                <ol>
+                    <li>
+                        The user enters a URL or clicks a link.
+                    </li>
+
+                    <li>
+                        The browser identifies the website’s domain name.
+                    </li>
+
+                    <li>
+                        DNS translates the domain name into an IP address.
+                    </li>
+
+                    <li>
+                        The browser connects to the web server.
+                    </li>
+
+                    <li>
+                        The browser sends an HTTP request.
+                    </li>
+
+                    <li>
+                        The server receives and processes the request.
+                    </li>
+
+                    <li>
+                        The server sends an HTTP response.
+                    </li>
+
+                    <li>
+                        The browser interprets the response and displays the page.
+                    </li>
+                </ol>
+
+            </article>
+
+            <article class="card">
+
+                <h2>Example</h2>
+
+                <p>
+                    Suppose a user enters:
+                </p>
+
+                <p>
+                    <strong>https://example.com/about.html</strong>
+                </p>
+
+                <p>
+                    The browser locates the server for example.com and requests
+                    the file named about.html. If the file exists, the server
+                    responds with the file and a successful status code.
+                </p>
+
+                <p>
+                    If the file does not exist, the server may return a
+                    <strong>404 Not Found</strong> response instead.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- =====================================
+             HTTP Request
+        ====================================== -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>What Is in an HTTP Request?</h2>
+
+                <p>
+                    An HTTP request usually contains several pieces of
+                    information:
+                </p>
+
+                <ul>
+                    <li>The request method, such as GET or POST</li>
+                    <li>The requested path or resource</li>
+                    <li>The HTTP version</li>
+                    <li>Headers containing browser and connection information</li>
+                    <li>An optional body containing submitted data</li>
+                </ul>
+
+                <p>
+                    A GET request normally asks for information, while a POST
+                    request usually sends information to the server.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>Sample HTTP Request</h2>
+
+                <pre><code>GET /index.html HTTP/1.1
+Host: example.com
+User-Agent: Web Browser
+Accept: text/html</code></pre>
+
+                <p>
+                    This example asks the server at example.com to send the
+                    index.html file.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- =====================================
+             HTTP Response
+        ====================================== -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>What Is in an HTTP Response?</h2>
+
+                <p>
+                    A response usually contains:
+                </p>
+
+                <ul>
+                    <li>The HTTP version</li>
+                    <li>A status code</li>
+                    <li>A short status message</li>
+                    <li>Response headers</li>
+                    <li>The requested content or an error message</li>
+                </ul>
+
+                <p>
+                    The status code helps the browser understand whether the
+                    request was successful, redirected, rejected, or affected
+                    by a server problem.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>Sample HTTP Response</h2>
+
+                <pre><code>HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 1250
+
+&lt;html&gt;
+    &lt;body&gt;Webpage content&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                <p>
+                    The status code 200 means that the request was successful.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- =====================================
+             HTTP Methods
+        ====================================== -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>Common HTTP Request Methods</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>Purpose</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>GET</td>
+                            <td>Retrieves information from a server.</td>
+                            <td>Opening a webpage</td>
+                        </tr>
+
+                        <tr>
+                            <td>POST</td>
+                            <td>Sends new information to a server.</td>
+                            <td>Submitting a registration form</td>
+                        </tr>
+
+                        <tr>
+                            <td>PUT</td>
+                            <td>Replaces or updates a resource.</td>
+                            <td>Updating an account record</td>
+                        </tr>
+
+                        <tr>
+                            <td>PATCH</td>
+                            <td>Updates part of an existing resource.</td>
+                            <td>Changing a profile picture</td>
+                        </tr>
+
+                        <tr>
+                            <td>DELETE</td>
+                            <td>Requests removal of a resource.</td>
+                            <td>Deleting a saved item</td>
+                        </tr>
+
+                        <tr>
+                            <td>HEAD</td>
+                            <td>
+                                Requests headers without the response body.
+                            </td>
+                            <td>Checking whether a file exists</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </article>
+
+        </section>
+
+        <!-- =====================================
+             Status Codes
+        ====================================== -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>HTTP Status Code Categories</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Meaning</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>100–199</td>
+                            <td>Informational responses</td>
+                            <td>100 Continue</td>
+                        </tr>
+
+                        <tr>
+                            <td>200–299</td>
+                            <td>Successful responses</td>
+                            <td>200 OK</td>
+                        </tr>
+
+                        <tr>
+                            <td>300–399</td>
+                            <td>Redirection responses</td>
+                            <td>301 Moved Permanently</td>
+                        </tr>
+
+                        <tr>
+                            <td>400–499</td>
+                            <td>Client error responses</td>
+                            <td>404 Not Found</td>
+                        </tr>
+
+                        <tr>
+                            <td>500–599</td>
+                            <td>Server error responses</td>
+                            <td>500 Internal Server Error</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </article>
+
+            <article class="card">
+
+                <h2>Common Status Codes</h2>
+
+                <ul>
+                    <li>
+                        <strong>200 OK:</strong> The request was successful.
+                    </li>
+
+                    <li>
+                        <strong>201 Created:</strong> A new resource was created.
+                    </li>
+
+                    <li>
+                        <strong>301 Moved Permanently:</strong> The resource moved
+                        to a different address.
+                    </li>
+
+                    <li>
+                        <strong>400 Bad Request:</strong> The request was invalid.
+                    </li>
+
+                    <li>
+                        <strong>401 Unauthorized:</strong> Authentication is
+                        required.
+                    </li>
+
+                    <li>
+                        <strong>403 Forbidden:</strong> The server refuses access.
+                    </li>
+
+                    <li>
+                        <strong>404 Not Found:</strong> The resource could not be
+                        located.
+                    </li>
+
+                    <li>
+                        <strong>500 Internal Server Error:</strong> The server
+                        experienced a problem.
+                    </li>
+                </ul>
+
+            </article>
+
+        </section>
+
+        <!-- =====================================
+             HTTPS and Performance
+        ====================================== -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>How HTTPS Protects Communication</h2>
+
+                <p>
+                    HTTPS combines HTTP with TLS encryption. Before sensitive
+                    information is transferred, the browser and server create a
+                    secure connection.
+                </p>
+
+                <p>
+                    Encryption helps prevent attackers from reading passwords,
+                    payment information, private messages, and account data while
+                    it travels between the client and server.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>How Browsers Improve Performance</h2>
+
+                <p>
+                    Browsers use caching to save copies of files that have
+                    already been downloaded. When the user returns to a website,
+                    some resources can be loaded from the local device instead
+                    of being downloaded again.
+                </p>
+
+                <p>
+                    Modern versions of HTTP also allow multiple resources to be
+                    transferred efficiently through a smaller number of
+                    connections.
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================
+         Footer
+    ====================================== -->
+
+    <footer>
+
+        <h3>Justin Ramsey</h3>
+
+        <p>IT 3203 Web Development Project</p>
+
+        <p>Kennesaw State University</p>
+
+        <p>
+            Continue learning with the
+            <a href="key-concepts.html">
+                Key Concepts page
+            </a>
+            or test yourself using the
+            <a href="quiz.html">
+                HTTP Quiz
+            </a>.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

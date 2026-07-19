@@ -1,0 +1,545 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- General Page Styles ---------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7fb;
+    color: #263238;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    color: #005ea8;
+}
+
+a:hover {
+    color: #003366;
+}
+
+/* ---------- Navigation ---------- */
+
+nav {
+    align-items: center;
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 5%;
+    width: 100%;
+}
+
+.logo h2 {
+    color: white;
+    font-size: 1.35rem;
+    white-space: nowrap;
+}
+
+.nav-links {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-weight: bold;
+    padding: 8px 11px;
+    text-decoration: none;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    background-color: #0055a5;
+    color: #ffd54f;
+    outline: none;
+}
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    gap: 45px;
+    justify-content: space-between;
+    min-height: 420px;
+    padding: 55px 7%;
+}
+
+.hero-text {
+    flex: 1 1 500px;
+}
+
+.hero-text h1,
+.hero > h1 {
+    color: #003366;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-text p,
+.hero > p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    max-width: 750px;
+}
+
+.hero-image {
+    flex: 1 1 360px;
+    text-align: center;
+}
+
+.hero-image img {
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+    margin: 0 auto;
+    max-height: 380px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* ---------- Buttons and Links ---------- */
+
+.button,
+button {
+    background-color: #003366;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 8px 8px 8px 0;
+    padding: 12px 24px;
+    text-decoration: none;
+    transition: background-color 0.25s, transform 0.25s;
+}
+
+.button:hover,
+button:hover {
+    background-color: #0055aa;
+    color: white;
+    transform: translateY(-1px);
+}
+
+button:focus,
+.button:focus {
+    outline: 3px solid #ffd54f;
+    outline-offset: 2px;
+}
+
+/* ---------- Main Content Layout ---------- */
+
+main {
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 auto;
+    max-width: 1250px;
+    padding: 40px 5%;
+    width: 100%;
+}
+
+/* ---------- Cards ---------- */
+
+.card {
+    background-color: white;
+    border: 1px solid #dce3eb;
+    border-radius: 12px;
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.1);
+    min-width: 0;
+    padding: 25px;
+    width: 100%;
+}
+
+.card h1,
+.card h2,
+.card h3 {
+    color: #003366;
+    line-height: 1.3;
+    margin-bottom: 14px;
+}
+
+.card p {
+    margin-bottom: 14px;
+}
+
+.card ul,
+.card ol {
+    margin: 10px 0 10px 24px;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+.page-image {
+    border-radius: 10px;
+    margin: 18px 0;
+    max-height: 420px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* ---------- Tables ---------- */
+
+table {
+    border-collapse: collapse;
+    display: block;
+    margin-top: 15px;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: normal;
+    width: 100%;
+}
+
+thead,
+tbody {
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #aeb8c2;
+    min-width: 120px;
+    padding: 11px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+/* ---------- Quiz Form ---------- */
+
+form {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+form .card {
+    margin-bottom: 24px;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    margin: 4px 0;
+}
+
+input[type="text"] {
+    border: 1px solid #8b98a5;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 10px;
+    max-width: 100%;
+    padding: 12px;
+    width: 100%;
+}
+
+input[type="text"]:focus {
+    border-color: #0055aa;
+    outline: 3px solid rgba(0, 85, 170, 0.18);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 9px;
+    min-height: 18px;
+    min-width: 18px;
+    vertical-align: middle;
+}
+
+#results {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.correct {
+    color: #157347;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: #b02a37;
+    font-weight: bold;
+}
+
+.pass {
+    color: #157347;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.fail {
+    color: #b02a37;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+/* ---------- Reference Links ---------- */
+
+.reference-list {
+    list-style-position: inside;
+}
+
+.reference-list li {
+    border-bottom: 1px solid #dce3eb;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
+
+.reference-list a {
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #003366;
+    color: white;
+    margin-top: 35px;
+    padding: 30px 5%;
+    text-align: center;
+}
+
+footer a {
+    color: #ffd54f;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* ==================================================
+   Tablet Design
+   Applies to screens 900px wide and smaller
+================================================== */
+
+@media screen and (max-width: 900px) {
+
+    nav {
+        align-items: center;
+        flex-direction: column;
+        gap: 14px;
+        padding: 18px 4%;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero {
+        flex-direction: column;
+        min-height: auto;
+        padding: 42px 6%;
+        text-align: center;
+    }
+
+    .hero-text {
+        flex-basis: auto;
+    }
+
+    .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        flex-basis: auto;
+        width: min(100%, 600px);
+    }
+
+    .container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 32px 4%;
+    }
+}
+
+/* ==================================================
+   Phone Design
+   Applies to screens 600px wide and smaller
+================================================== */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    nav {
+        padding: 15px 12px;
+    }
+
+    .logo h2 {
+        font-size: 1.15rem;
+        white-space: normal;
+    }
+
+    .nav-links {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        padding: 10px;
+        width: 100%;
+    }
+
+    .hero {
+        gap: 25px;
+        padding: 32px 18px;
+    }
+
+    .hero-text h1,
+    .hero > h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p,
+    .hero > p {
+        font-size: 1rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 24px 15px;
+    }
+
+    .card {
+        padding: 19px;
+    }
+
+    .button,
+    button {
+        display: block;
+        margin: 10px 0;
+        min-height: 46px;
+        width: 100%;
+    }
+
+    th,
+    td {
+        min-width: 105px;
+        padding: 8px;
+    }
+
+    input[type="text"] {
+        min-height: 46px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        min-height: 22px;
+        min-width: 22px;
+    }
+
+    label {
+        padding: 5px 0;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+}
+pre {
+    background-color: #17212b;
+    border-radius: 8px;
+    color: #f4f7fb;
+    margin: 15px 0;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 18px;
+}
+
+code {
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+}
+#quizForm h3{
+    margin-top:25px;
+}
+
+#quizForm input[type=text]{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+#quizForm label{
+    display:block;
+    margin:8px 0;
+}
+
+button{
+    padding:12px 22px;
+    margin:10px 10px 10px 0;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#submitBtn{
+    background:#0066cc;
+    color:white;
+}
+
+#resetBtn{
+    background:#777;
+    color:white;
+}
+
+#results{
+    margin-top:30px;
+    padding:20px;
+    border-radius:8px;
+    background:#eef5ff;
+}

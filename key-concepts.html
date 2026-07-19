@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTTP Key Concepts | Justin Ramsey</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            <h2>Understanding HTTP</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="how-http-works.html">How HTTP Works</a></li>
+            <li><a href="key-concepts.html">Key Concepts</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <header class="hero">
+
+        <div class="hero-text">
+
+            <h1>Important HTTP Key Concepts</h1>
+
+            <p>
+                Understanding HTTP involves more than knowing how browsers and
+                servers communicate. Several technologies work together to help
+                users locate websites, transfer information, maintain sessions,
+                improve performance, and protect sensitive data.
+            </p>
+
+            <p>
+                This page explains the most important concepts connected to HTTP
+                and modern web communication.
+            </p>
+
+            <a href="#concepts" class="button">
+                Explore the Concepts
+            </a>
+
+            <a href="quiz.html" class="button">
+                Take the Quiz
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="images/http-concepts.jpg"
+                alt="Web development concepts connected through the Internet">
+
+        </div>
+
+    </header>
+
+    <main id="concepts">
+
+        <!-- URLs and DNS -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>URLs</h2>
+
+                <p>
+                    A URL, or Uniform Resource Locator, is the address used to
+                    locate a resource on the Internet. A URL can identify a
+                    webpage, image, video, document, or other online resource.
+                </p>
+
+                <p>
+                    A URL may contain a protocol, domain name, path, query
+                    information, and fragment.
+                </p>
+
+                <p>
+                    Example:
+                    <strong>https://example.com/products/item.html</strong>
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>DNS</h2>
+
+                <p>
+                    DNS stands for Domain Name System. It converts human-readable
+                    domain names into IP addresses that computers use to locate
+                    servers.
+                </p>
+
+                <p>
+                    Without DNS, users would need to remember numerical IP
+                    addresses instead of names such as google.com or kennesaw.edu.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- HTTP and HTTPS -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>HTTP</h2>
+
+                <p>
+                    HTTP is the standard protocol used to transfer information
+                    between web clients and servers. It controls how requests
+                    are sent and how responses are returned.
+                </p>
+
+                <p>
+                    Regular HTTP does not encrypt the information being
+                    transferred, which means sensitive data may be exposed if
+                    the connection is intercepted.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>HTTPS</h2>
+
+                <p>
+                    HTTPS is the secure version of HTTP. It uses TLS encryption
+                    to protect data while it travels between a browser and a
+                    server.
+                </p>
+
+                <p>
+                    HTTPS is especially important for login pages, banking,
+                    online shopping, payment forms, and websites that collect
+                    personal information.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- Methods and Headers -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>HTTP Request Methods</h2>
+
+                <p>
+                    HTTP methods describe the action that the client wants the
+                    server to perform.
+                </p>
+
+                <ul>
+                    <li><strong>GET:</strong> Retrieves information.</li>
+                    <li><strong>POST:</strong> Sends new information.</li>
+                    <li><strong>PUT:</strong> Replaces or updates a resource.</li>
+                    <li><strong>PATCH:</strong> Updates part of a resource.</li>
+                    <li><strong>DELETE:</strong> Removes a resource.</li>
+                    <li><strong>HEAD:</strong> Retrieves headers only.</li>
+                </ul>
+
+            </article>
+
+            <article class="card">
+
+                <h2>HTTP Headers</h2>
+
+                <p>
+                    Headers provide additional information about a request or
+                    response. They help the browser and server understand how
+                    the data should be handled.
+                </p>
+
+                <ul>
+                    <li>Content type</li>
+                    <li>Content length</li>
+                    <li>Browser information</li>
+                    <li>Authentication details</li>
+                    <li>Language preferences</li>
+                    <li>Cache instructions</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+        <!-- Status Codes -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>HTTP Status Codes</h2>
+
+                <p>
+                    Status codes are three-digit numbers included in server
+                    responses. They tell the browser what happened after a
+                    request was processed.
+                </p>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Name</th>
+                            <th>Meaning</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>200</td>
+                            <td>OK</td>
+                            <td>The request was successful.</td>
+                        </tr>
+
+                        <tr>
+                            <td>201</td>
+                            <td>Created</td>
+                            <td>A new resource was successfully created.</td>
+                        </tr>
+
+                        <tr>
+                            <td>301</td>
+                            <td>Moved Permanently</td>
+                            <td>The resource has a new location.</td>
+                        </tr>
+
+                        <tr>
+                            <td>400</td>
+                            <td>Bad Request</td>
+                            <td>The request was invalid.</td>
+                        </tr>
+
+                        <tr>
+                            <td>401</td>
+                            <td>Unauthorized</td>
+                            <td>Authentication is required.</td>
+                        </tr>
+
+                        <tr>
+                            <td>403</td>
+                            <td>Forbidden</td>
+                            <td>The server refuses access.</td>
+                        </tr>
+
+                        <tr>
+                            <td>404</td>
+                            <td>Not Found</td>
+                            <td>The requested resource was not found.</td>
+                        </tr>
+
+                        <tr>
+                            <td>500</td>
+                            <td>Internal Server Error</td>
+                            <td>The server experienced a problem.</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </article>
+
+        </section>
+
+        <!-- Cookies and Sessions -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>Cookies</h2>
+
+                <p>
+                    Cookies are small pieces of information stored in a user's
+                    browser. Websites use them to remember information between
+                    requests.
+                </p>
+
+                <p>
+                    Cookies can remember login status, shopping cart items,
+                    language settings, and user preferences.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>Sessions</h2>
+
+                <p>
+                    A session allows a website to remember a user's activity
+                    during a visit. The server often creates a session ID and
+                    connects it to a cookie stored in the browser.
+                </p>
+
+                <p>
+                    Sessions are commonly used for account logins, online
+                    shopping carts, and personalized website experiences.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- Caching and APIs -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>Caching</h2>
+
+                <p>
+                    Caching stores copies of files so they can be loaded more
+                    quickly later. Browsers may cache images, stylesheets,
+                    scripts, and webpages.
+                </p>
+
+                <p>
+                    Caching improves performance, reduces network traffic, and
+                    lowers the amount of work required from the server.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>APIs</h2>
+
+                <p>
+                    An API, or Application Programming Interface, allows
+                    different software systems to exchange information.
+                </p>
+
+                <p>
+                    Many web APIs use HTTP methods such as GET, POST, PUT, and
+                    DELETE to send and receive data. JSON is one of the most
+                    common formats used for API communication.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- Content Types and Authentication -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>Content Types</h2>
+
+                <p>
+                    The Content-Type header tells the browser what kind of
+                    information the server is sending.
+                </p>
+
+                <ul>
+                    <li><strong>text/html:</strong> HTML webpage</li>
+                    <li><strong>text/css:</strong> CSS stylesheet</li>
+                    <li><strong>application/javascript:</strong> JavaScript</li>
+                    <li><strong>application/json:</strong> JSON data</li>
+                    <li><strong>image/png:</strong> PNG image</li>
+                    <li><strong>image/jpeg:</strong> JPEG image</li>
+                </ul>
+
+            </article>
+
+            <article class="card">
+
+                <h2>Authentication</h2>
+
+                <p>
+                    Authentication confirms a user's identity before access is
+                    granted. Websites may use usernames, passwords, security
+                    tokens, multi-factor authentication, or session cookies.
+                </p>
+
+                <p>
+                    Authorization happens after authentication and determines
+                    which resources the user is allowed to access.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- Comparison Table -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>HTTP Concepts at a Glance</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Concept</th>
+                            <th>Main Purpose</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>URL</td>
+                            <td>Identifies the location of an online resource.</td>
+                        </tr>
+
+                        <tr>
+                            <td>DNS</td>
+                            <td>Converts domain names into IP addresses.</td>
+                        </tr>
+
+                        <tr>
+                            <td>HTTPS</td>
+                            <td>Encrypts web communication.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Headers</td>
+                            <td>Provide additional request and response details.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cookies</td>
+                            <td>Store small amounts of browser information.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sessions</td>
+                            <td>Remember user activity during a visit.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Caching</td>
+                            <td>Improves speed by saving copies of resources.</td>
+                        </tr>
+
+                        <tr>
+                            <td>API</td>
+                            <td>Allows software applications to exchange data.</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>Justin Ramsey</h3>
+
+        <p>IT 3203 Web Development Project</p>
+
+        <p>Kennesaw State University</p>
+
+        <p>
+            After reviewing these concepts, visit the
+            <a href="quiz.html">HTTP Quiz</a>
+            to test your knowledge.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

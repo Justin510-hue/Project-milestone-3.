@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTTP Knowledge Quiz | Justin Ramsey</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        <h2>Understanding HTTP</h2>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="how-http-works.html">How HTTP Works</a></li>
+        <li><a href="key-concepts.html">Key Concepts</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+
+</nav>
+
+<header class="hero">
+
+<div class="hero-text">
+
+<h1>HTTP Knowledge Quiz</h1>
+
+<p>
+Test what you've learned throughout this website. The quiz contains
+multiple-choice, fill-in-the-blank, and multi-select questions covering
+the history of HTTP, request methods, status codes, HTTPS, and other key
+concepts.
+</p>
+
+<p>
+A passing score is 80% or higher.
+</p>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/quiz.jpg"
+alt="Student taking an online quiz">
+
+</div>
+
+</header>
+
+<main>
+
+<section class="container">
+
+<article class="card">
+
+<h2>Quiz</h2>
+
+<form id="quizForm">
+
+<!-- Question 1 -->
+
+<h3>1. What does HTTP stand for?</h3>
+
+<input type="text" id="q1">
+
+<hr>
+
+<!-- Question 2 -->
+
+<h3>2. Which HTTP method retrieves information from a server?</h3>
+
+<label><input type="radio" name="q2" value="GET"> GET</label><br>
+
+<label><input type="radio" name="q2" value="POST"> POST</label><br>
+
+<label><input type="radio" name="q2" value="DELETE"> DELETE</label>
+
+<hr>
+
+<!-- Question 3 -->
+
+<h3>3. Which status code means "Not Found"?</h3>
+
+<label><input type="radio" name="q3" value="200">200</label><br>
+
+<label><input type="radio" name="q3" value="301">301</label><br>
+
+<label><input type="radio" name="q3" value="404">404</label>
+
+<hr>
+
+<!-- Question 4 -->
+
+<h3>4. Which protocol encrypts communication?</h3>
+
+<label><input type="radio" name="q4" value="FTP">FTP</label><br>
+
+<label><input type="radio" name="q4" value="HTTPS">HTTPS</label><br>
+
+<label><input type="radio" name="q4" value="SMTP">SMTP</label>
+
+<hr>
+
+<!-- Question 5 -->
+
+<h3>5. Select ALL HTTP request methods.</h3>
+
+<label><input type="checkbox" value="GET" id="get">GET</label><br>
+
+<label><input type="checkbox" value="POST" id="post">POST</label><br>
+
+<label><input type="checkbox" value="PUT" id="put">PUT</label><br>
+
+<label><input type="checkbox" value="DELETE" id="delete">DELETE</label><br>
+
+<label><input type="checkbox" value="JPEG" id="jpeg">JPEG</label>
+
+<br><br>
+
+<button type="button" id="submitBtn">
+Submit Quiz
+</button>
+
+<button type="reset" id="resetBtn">
+Reset Quiz
+</button>
+
+</form>
+
+<div id="results"></div>
+
+</article>
+
+</section>
+
+</main>
+
+<footer>
+
+<h3>Justin Ramsey</h3>
+
+<p>IT 3203 Web Development Project</p>
+
+<p>Kennesaw State University</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

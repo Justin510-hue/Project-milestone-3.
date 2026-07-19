@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title -->
+    <title>History of HTTP | Justin Ramsey</title>
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================
+         Navigation Menu
+    ====================================== -->
+
+    <nav>
+
+        <div class="logo">
+            <h2>Understanding HTTP</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="how-http-works.html">How HTTP Works</a></li>
+            <li><a href="key-concepts.html">Key Concepts</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- =====================================
+         Hero Section
+    ====================================== -->
+
+    <header class="hero">
+
+        <div class="hero-text">
+
+            <h1>The History and Development of HTTP</h1>
+
+            <p>
+                HTTP has been an important part of the World Wide Web since
+                its beginning. It started as a simple way to transfer text
+                documents and later developed into a powerful protocol that
+                supports modern websites, applications, video, online shopping,
+                and many other Internet services.
+            </p>
+
+            <p>
+                Each major version of HTTP introduced improvements in speed,
+                reliability, efficiency, and security.
+            </p>
+
+            <a href="#timeline" class="button">
+                View the Timeline
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="images/tim-berners-lee.jpg"
+                alt="Tim Berners-Lee, inventor of the World Wide Web">
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- =====================================
+             Beginning of the Web
+        ====================================== -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>Who Created HTTP?</h2>
+
+                <p>
+                    HTTP was developed by Tim Berners-Lee while he worked at
+                    CERN, a major scientific research organization in
+                    Switzerland. In 1989, Berners-Lee proposed a system that
+                    would allow researchers to share information through
+                    linked electronic documents.
+                </p>
+
+                <p>
+                    His system included three important technologies:
+                    HTML for creating documents, URLs for identifying resources,
+                    and HTTP for transferring information between computers.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>The First Web Server and Browser</h2>
+
+                <p>
+                    Berners-Lee created the first web browser and the first web
+                    server. The browser allowed users to read and edit web
+                    documents, while the server stored and delivered those
+                    documents when requested.
+                </p>
+
+                <p>
+                    The first website explained the World Wide Web project and
+                    provided instructions for creating web servers and webpages.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- =====================================
+             HTTP Versions
+        ====================================== -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>HTTP/0.9</h2>
+
+                <p>
+                    HTTP/0.9 was the earliest version of HTTP. It was extremely
+                    simple and supported only the GET method. A browser could
+                    request an HTML document, and the server would return the
+                    document without headers, status codes, or additional
+                    information.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>HTTP/1.0</h2>
+
+                <p>
+                    HTTP/1.0 introduced request and response headers, status
+                    codes, and support for different types of files. This made
+                    it possible to send images, documents, and other resources
+                    in addition to basic HTML pages.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>HTTP/1.1</h2>
+
+                <p>
+                    HTTP/1.1 improved performance by allowing persistent
+                    connections. Instead of opening a new connection for every
+                    resource, browsers could reuse the same connection for
+                    multiple requests.
+                </p>
+
+                <p>
+                    It also added better caching, host headers, and transfer
+                    controls. HTTP/1.1 remained the main version of HTTP for
+                    many years.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>HTTP/2</h2>
+
+                <p>
+                    HTTP/2 improved website performance through multiplexing,
+                    header compression, and binary framing. Multiplexing allows
+                    several requests and responses to use one connection at the
+                    same time.
+                </p>
+
+                <p>
+                    These changes helped websites load faster, especially when
+                    they contained many images, scripts, and stylesheets.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>HTTP/3</h2>
+
+                <p>
+                    HTTP/3 uses QUIC instead of relying entirely on traditional
+                    TCP connections. QUIC is designed to reduce delays, recover
+                    more quickly from network interruptions, and improve
+                    performance on mobile networks.
+                </p>
+
+                <p>
+                    HTTP/3 is especially useful when users switch between Wi-Fi
+                    and cellular connections or experience unstable networks.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- =====================================
+             Timeline Table
+        ====================================== -->
+
+        <section class="container" id="timeline">
+
+            <article class="card">
+
+                <h2>HTTP Development Timeline</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Event or Version</th>
+                            <th>Main Development</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1989</td>
+                            <td>World Wide Web Proposal</td>
+                            <td>
+                                Tim Berners-Lee proposed a system for sharing
+                                linked documents over computer networks.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>1990</td>
+                            <td>First Browser and Server</td>
+                            <td>
+                                The first web browser, server, and website were
+                                created at CERN.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>1991</td>
+                            <td>HTTP/0.9</td>
+                            <td>
+                                Supported simple GET requests for HTML documents.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>1996</td>
+                            <td>HTTP/1.0</td>
+                            <td>
+                                Added headers, status codes, and multiple content
+                                types.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>1997</td>
+                            <td>HTTP/1.1</td>
+                            <td>
+                                Improved connections, caching, and web
+                                performance.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2015</td>
+                            <td>HTTP/2</td>
+                            <td>
+                                Added multiplexing, compression, and binary
+                                communication.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2022</td>
+                            <td>HTTP/3</td>
+                            <td>
+                                Standardized the use of QUIC for faster and more
+                                reliable connections.
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </article>
+
+        </section>
+
+        <!-- =====================================
+             Historical Importance
+        ====================================== -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>Why HTTP Changed the Internet</h2>
+
+                <p>
+                    HTTP made it possible for computers around the world to
+                    exchange web content using the same standard. This helped
+                    the World Wide Web grow from a research project into a
+                    global communication platform.
+                </p>
+
+                <p>
+                    Today, HTTP supports social media, online education,
+                    banking, entertainment, business systems, cloud services,
+                    and many other technologies.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>Interesting Historical Facts</h2>
+
+                <ul>
+                    <li>
+                        The first web server ran on a NeXT computer at CERN.
+                    </li>
+
+                    <li>
+                        The earliest webpages were mostly text and hyperlinks.
+                    </li>
+
+                    <li>
+                        HTTP/1.1 remained widely used for more than two decades.
+                    </li>
+
+                    <li>
+                        HTTP/2 and HTTP/3 were created mainly to improve speed
+                        and efficiency.
+                    </li>
+
+                    <li>
+                        Modern websites generally use HTTPS to protect user data.
+                    </li>
+                </ul>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================
+         Footer
+    ====================================== -->
+
+    <footer>
+
+        <h3>Justin Ramsey</h3>
+
+        <p>IT 3203 Web Development Project</p>
+
+        <p>Kennesaw State University</p>
+
+        <p>
+            Learn more from
+            <a
+                href="https://home.cern/science/computing/the-birth-of-the-web/"
+                target="_blank"
+                rel="noopener noreferrer">
+                CERN’s history of the World Wide Web
+            </a>.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

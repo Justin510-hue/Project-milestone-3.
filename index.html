@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on phones and tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title -->
+    <title>Understanding HTTP | Justin Ramsey</title>
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================
+         Navigation Menu
+    ====================================== -->
+
+    <nav>
+
+        <div class="logo">
+            <h2>Understanding HTTP</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="how-http-works.html">How HTTP Works</a></li>
+            <li><a href="key-concepts.html">Key Concepts</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- =====================================
+         Hero Section
+    ====================================== -->
+
+    <header class="hero">
+
+        <div class="hero-text">
+
+            <h1>Understanding Hypertext Transfer Protocol</h1>
+
+            <p>
+                Hypertext Transfer Protocol, better known as HTTP, is one of the
+                main technologies used by the World Wide Web. It allows web
+                browsers and servers to exchange webpages, images, videos,
+                forms, and other online resources.
+            </p>
+
+            <p>
+                This website explains the history of HTTP, how requests and
+                responses work, important web concepts, and the role HTTP plays
+                in modern communication.
+            </p>
+
+            <a href="how-http-works.html" class="button">
+                Learn How HTTP Works
+            </a>
+
+            <a href="quiz.html" class="button">
+                Take the Quiz
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="images/http-banner.jpg"
+                alt="Illustration of a browser communicating with a web server">
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- =====================================
+             Project Overview
+        ====================================== -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>Project Overview</h2>
+
+                <p>
+                    This website was created for my IT 3203 Web Development
+                    course at Kennesaw State University. The project combines
+                    research about HTTP with practical experience using HTML,
+                    CSS, JavaScript, responsive design, and GitHub Pages.
+                </p>
+
+                <p>
+                    The website includes multiple research pages, a references
+                    section, an About Me page, and an interactive quiz that
+                    checks the visitor’s understanding of HTTP.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>What You Will Learn</h2>
+
+                <ul>
+                    <li>What HTTP stands for and why it is important</li>
+                    <li>How HTTP developed over time</li>
+                    <li>How browsers communicate with web servers</li>
+                    <li>The difference between HTTP and HTTPS</li>
+                    <li>Common request methods such as GET and POST</li>
+                    <li>The meaning of common HTTP status codes</li>
+                    <li>How cookies, URLs, and DNS support web communication</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+        <!-- =====================================
+             Why HTTP Matters
+        ====================================== -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>Why HTTP Matters</h2>
+
+                <img
+                    src="images/browser-server.png"
+                    alt="Diagram showing a browser sending a request to a server"
+                    class="page-image">
+
+                <p>
+                    Whenever a user visits a website, the browser sends an HTTP
+                    request to a server. The server then sends an HTTP response
+                    containing the requested information. This process happens
+                    quickly and repeatedly while a webpage is loading.
+                </p>
+
+                <p>
+                    Without HTTP or HTTPS, browsers would not be able to request
+                    webpages, submit forms, access online services, or retrieve
+                    images and videos from servers.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>Common Uses of HTTP</h2>
+
+                <ul>
+                    <li>Loading webpages and images</li>
+                    <li>Submitting registration and login forms</li>
+                    <li>Streaming music and video</li>
+                    <li>Downloading files</li>
+                    <li>Accessing application programming interfaces</li>
+                    <li>Sending data between websites and servers</li>
+                    <li>Supporting online shopping and payment systems</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+        <!-- =====================================
+             Benefits and Security
+        ====================================== -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>Benefits of HTTP</h2>
+
+                <ul>
+                    <li>Uses a widely accepted communication standard</li>
+                    <li>Works across different browsers and operating systems</li>
+                    <li>Supports many kinds of web content</li>
+                    <li>Allows websites and applications to exchange data</li>
+                    <li>Can be secured through HTTPS encryption</li>
+                    <li>Supports caching to improve website performance</li>
+                </ul>
+
+            </article>
+
+            <article class="card">
+
+                <h2>HTTP and HTTPS</h2>
+
+                <p>
+                    HTTP sends information between browsers and servers, while
+                    HTTPS adds encryption through TLS. Encryption helps protect
+                    passwords, payment details, account information, and other
+                    sensitive data from being read while it travels across the
+                    Internet.
+                </p>
+
+                <p>
+                    Most modern websites use HTTPS because it provides greater
+                    security and helps visitors know that the connection is
+                    protected.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- =====================================
+             Quick Facts Table
+        ====================================== -->
+
+        <section class="container">
+
+            <article class="card">
+
+                <h2>Quick Facts About HTTP</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Topic</th>
+                            <th>Information</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Full Name</td>
+                            <td>Hypertext Transfer Protocol</td>
+                        </tr>
+
+                        <tr>
+                            <td>Created By</td>
+                            <td>Tim Berners-Lee</td>
+                        </tr>
+
+                        <tr>
+                            <td>Development Began</td>
+                            <td>1989</td>
+                        </tr>
+
+                        <tr>
+                            <td>Main Purpose</td>
+                            <td>
+                                Communication between web browsers and servers
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Secure Version</td>
+                            <td>HTTPS</td>
+                        </tr>
+
+                        <tr>
+                            <td>Modern Version</td>
+                            <td>HTTP/3</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </article>
+
+            <article class="card">
+
+                <h2>Explore the Website</h2>
+
+                <p>
+                    Use the navigation menu to explore each section of the
+                    project. After reviewing the research, visit the Quiz page
+                    to test your knowledge.
+                </p>
+
+                <ul>
+                    <li>
+                        <a href="history.html">Explore the History of HTTP</a>
+                    </li>
+
+                    <li>
+                        <a href="how-http-works.html">
+                            Learn How HTTP Works
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="key-concepts.html">
+                            Review Important Key Concepts
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="references.html">
+                            View Research Sources
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="quiz.html">
+                            Take the HTTP Quiz
+                        </a>
+                    </li>
+                </ul>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================
+         Footer
+    ====================================== -->
+
+    <footer>
+
+        <h3>Justin Ramsey</h3>
+
+        <p>IT 3203 Web Development Project</p>
+
+        <p>Kennesaw State University</p>
+
+        <p>
+            This website is a class project.
+
+            <a
+                href="https://ksuweb.github.io/IT3203/"
+                target="_blank"
+                rel="noopener noreferrer">
+                IT 3203 Course Website
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
